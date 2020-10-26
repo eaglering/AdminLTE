@@ -1362,6 +1362,48 @@ a:focus {
 .form-group-sm .form-control + .form-control-feedback.fa {
   line-height: 30px;
 }
+.checkable-btn-group .checkable-btn {
+  display: inline-block;
+  position: relative;
+  padding: 0 1em;
+}
+.checkable-btn-group .checkable-btn label {
+  font-weight: normal;
+  color: #adb5bd;
+  margin-bottom: 0;
+}
+.checkable-btn-group .checkable-btn input[type=radio],
+.checkable-btn-group .checkable-btn input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.checkable-btn-group .checkable-btn input[type=radio]:checked + label,
+.checkable-btn-group .checkable-btn input[type=checkbox]:checked + label {
+  color: #007bff;
+}
+.checkable-btn-group .checkable-btn::after {
+  content: ' ';
+  width: 1px;
+  background-color: #adb5bd;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0.5, 0.7);
+}
+.checkable-btn-group .checkable-btn:first-child {
+  padding-left: 0;
+}
+.checkable-btn-group .checkable-btn:last-child::after {
+  display: none;
+}
 /*
  * Component: Progress Bar
  * -----------------------
@@ -2733,6 +2775,13 @@ table.text-center th {
   text-align: left;
 }
 .table.align td {
+  text-align: right;
+}
+.table.table-simple tr td {
+  vertical-align: middle;
+}
+.table.table-simple tr > td:first-child {
+  width: 10em;
   text-align: right;
 }
 /*

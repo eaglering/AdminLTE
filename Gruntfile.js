@@ -59,7 +59,7 @@ module.exports = function (grunt) { // jshint ignore:line
         },
         files  : {
           // compilation.css  :  source.less
-          'dist/css/AdminLTE.min.css'                     : 'build/less/AdminLTE.less',
+          'dist/css/AdminLTE.min.css'                     : ['node_modules/toastr/build/toastr.min.css', 'build/less/AdminLTE.less'],
           // AdminLTE without plugins
           'dist/css/alt/AdminLTE-without-plugins.min.css' : 'build/less/AdminLTE-without-plugins.less',
           // Separate plugins
@@ -119,7 +119,11 @@ module.exports = function (grunt) { // jshint ignore:line
       },
       production: {
         files: {
-          'dist/js/adminlte.min.js': ['dist/js/adminlte.js']
+          'dist/js/adminlte.min.js': [
+            'node_modules/toastr/build/toastr.min.js',
+            'node_modules/jquery-pjax/jquery.pjax.js',
+            'dist/js/adminlte.js'
+          ]
         }
       }
     },
@@ -155,6 +159,8 @@ module.exports = function (grunt) { // jshint ignore:line
           'build/js/TodoList.js',
           'build/js/Tree.js',
           'build/js/Layout.js',
+          'build/js/Toast.js',
+          'build/js/Miscellaneous.js'
         ],
         dest: 'dist/js/adminlte.js'
       }
