@@ -27,6 +27,7 @@
   };
 
   var ClassName = {
+    expand: 'has-sidebar-secondary',
     open: 'active',
     hidden: 'hidden',
     tree: 'expand-tree'
@@ -58,9 +59,14 @@
   };
 
   ExpandTree.prototype.expand = function (tree, parent) {
-    parent.addClass(ClassName.open).siblings(Selector.open).removeClass(ClassName.open);
-    var menu = tree.clone().removeClass(ClassName.hidden).tree();
-    $(this.options.box).html(menu);
+    if (tree.length > 0) {
+      parent.addClass(ClassName.open).siblings(Selector.open).removeClass(ClassName.open);
+      var menu = tree.clone().removeClass(ClassName.hidden).tree();
+      $(this.options.box).html(menu);
+      $('body').addClass(ClassName.expand);
+    } else {
+      $('body').removeClass(ClassName.expand);
+    }
   };
 
   // Private

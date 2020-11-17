@@ -127,12 +127,13 @@ body {
       flex: 1;
       display: block;
       background-color: #fff;
+      box-shadow: 1px 0 1px rgba(0,0,0,0.05);
     }
     @media (max-width: @screen-xs-max) {
       .translate(-(@sidebar-width + @sidebar-secondary-width), 0);
     }
   }
-  .content-wrapper {
+  .content-wrapper, .main-footer {
     margin-left: @sidebar-width + @sidebar-secondary-width;
     @media (max-width: @screen-xs-max) {
       margin-left: 0;
