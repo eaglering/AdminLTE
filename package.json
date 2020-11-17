@@ -34,6 +34,7 @@
     "bootstrap-datepicker": "^1.8",
     "bootstrap-daterangepicker": "^2.1.25",
     "bootstrap-slider": "^9.10.0",
+    "bootstrap-validator": "^0.11.9",
     "chart.js": "^1",
     "ckeditor": "^4.11.2",
     "datatables.net": "^1.10.19",
@@ -53,10 +54,12 @@
     "jvectormap": "^1.2.2",
     "moment": "^2.24",
     "morris.js": "^0.5",
+    "nprogress": "^0.2.0",
     "pace": "0.0.4",
     "raphael": "^2.2.7",
     "select2": "^4.0.3",
     "slimscroll": "^0.9.1",
-    "toastr": "^2.1.4"
+    "toastr": "^2.1.4",
+    "x-editable": "^1.5.1"
   }
 }

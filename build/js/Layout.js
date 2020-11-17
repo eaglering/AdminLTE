@@ -24,6 +24,8 @@
     mainFooter    : '.main-footer',
     mainHeader    : '.main-header',
     mainSidebar   : '.main-sidebar',
+    sidebarFirst  : '.sidebar-first',
+    sidebarSecondary  : '.sidebar-secondary',
     slimScrollDiv : 'slimScrollDiv',
     sidebar       : '.sidebar',
     controlSidebar: '.control-sidebar',
@@ -132,8 +134,13 @@
         // $(Selector.sidebar).slimScroll({ destroy: true }).height('auto')
 
         // Add slimscroll
-        if ($(Selector.mainSidebar).find(Selector.slimScrollDiv).length === 0) {
-          $(Selector.sidebar).slimScroll({
+        if ($(Selector.sidebarFirst).find(Selector.slimScrollDiv).length === 0) {
+          $(Selector.sidebarFirst).find(Selector.sidebar).slimScroll({
+            height: ($(window).height() - $(Selector.mainHeader).height()) + 'px'
+          });
+        }
+        if ($(Selector.sidebarSecondary).find(Selector.slimScrollDiv).length === 0) {
+          $(Selector.sidebarSecondary).find(Selector.sidebar).slimScroll({
             height: ($(window).height() - $(Selector.mainHeader).height()) + 'px'
           });
         }

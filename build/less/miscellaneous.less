@@ -635,3 +635,64 @@ hr {
 #purple .slider-selection {
     background: #932ab6;
 }
+
+.filter-box {
+  font-size: 12px;
+  text-align: left;
+  >div {
+    padding: 0 8px;
+    height: 34px;
+    line-height: 2.8;
+    border-bottom: 1px solid #f4f4f4;
+  }
+  >div:nth-child(2n+1) {
+    text-align: right;
+  }
+}
+
+.widget-head {
+  margin-top: 40px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #eef1f5;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  position: relative;
+  &:first-child {
+    margin-top: 10px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 14px;
+    left: 10px;
+    top: 50%;
+    .translate(0, -50%);
+    background-color: #00aeff;
+  }
+  &.widget-primary {
+    &:before {
+      background-color: @btn-primary-bg;
+    }
+  }
+  &.widget-success {
+    &:before {
+      background-color: @btn-success-bg;
+    }
+  }
+  &.widget-warning {
+    &:before {
+      background-color: @btn-warning-bg;
+    }
+  }
+  &.widget-danger {
+    &:before {
+      background-color: @btn-danger-bg;
+    }
+  }
+  &.widget-info {
+    &:before {
+      background-color: @btn-info-bg;
+    }
+  }
+}

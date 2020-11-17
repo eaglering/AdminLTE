@@ -379,6 +379,11 @@ bootstrap-slider@^9.10.0:
   resolved "https://registry.yarnpkg.com/bootstrap-slider/-/bootstrap-slider-9.10.0.tgz#1103d6bc00cfbfa8cfc9a2599ab518c55643da3f"
   integrity sha1-EQPWvADPv6jPyaJZmrUYxVZD2j8=
 
+bootstrap-validator@^0.11.9:
+  version "0.11.9"
+  resolved "https://registry.yarnpkg.com/bootstrap-validator/-/bootstrap-validator-0.11.9.tgz#fb7058eef53623e78f5aa7967026f98f875a9404"
+  integrity sha1-+3BY7vU2I+ePWqeWcCb5j4dalAQ=
+
 bootstrap@^3.4:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.4.1.tgz#c3a347d419e289ad11f4033e3c4132b87c081d72"
@@ -3617,6 +3622,11 @@ npm-run-path@^2.0.0:
   dependencies:
     path-key "^2.0.0"
 
+nprogress@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
+
 nth-check@^1.0.2, nth-check@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-1.0.2.tgz#b2bd295c37e3dd58a3bf0700376663ba4d9cf05c"
@@ -5275,6 +5285,11 @@ winston@0.8.x:
 wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
+
+x-editable@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/x-editable/-/x-editable-1.5.1.tgz#2edbb8911ef2c5d61f63f06b0cf020be0fcc5849"
+  integrity sha1-Ltu4kR7yxdYfY/BrDPAgvg/MWEk=
 
 xmlbuilder@^3.1.0:
   version "3.1.0"

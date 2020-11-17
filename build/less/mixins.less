@@ -141,7 +141,7 @@
     }
     //First Level Submenu
     > .treeview-menu {
-      margin: 0 1px;
+      margin: 0;
       background: @sidebar-dark-submenu-bg;
     }
   }
@@ -194,7 +194,52 @@
     }
   }
 }
-
+.skin-light-sidebar-secondary(@bg-color, @text-color) {
+  .sidebar-secondary {
+    background-color: @bg-color;
+    //Sidebar Menu. First level links
+    .sidebar-menu > li {
+      //Section Headning
+      &.header {
+        color: @text-color;
+        background: @bg-color;
+      }
+      //links
+      > a {
+        border: none;
+      }
+      //Hover and active states
+      &.menu-open > a {
+        color: @text-color;
+        background: @bg-color;
+      }
+      &:hover > a, &.active > a {
+        color: @text-color;
+        background: @bg-color;
+      }
+      //First Level Submenu
+      > .treeview-menu {
+        margin: 0 1px;
+        background: @bg-color;
+      }
+    }
+    //All links within the sidebar menu
+    .sidebar a {
+      color: @text-color;
+    }
+    //All submenus
+    .sidebar-menu .treeview-menu {
+      > li {
+        > a {
+          color: @text-color;
+        }
+        &.active > a, > a:hover {
+          color: @text-color;
+        }
+      }
+    }
+  }
+}
 //Light Sidebar Mixin
 .skin-light-sidebar(@icon-active-color) {
   // Sidebar background color (Both .wrapper and .left-side are responsible for sidebar bg color)

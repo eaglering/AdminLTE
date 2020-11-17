@@ -15,10 +15,10 @@
   <!-- daterange picker -->
   <link rel="stylesheet" href="../../bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../../dist/css/skins/skin-black.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,11 +26,8 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-
-  <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-black sidebar-mini fixed has-sidebar-secondary">
 <div class="wrapper">
 
   <header class="main-header">
@@ -298,356 +295,700 @@
   </header>
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      <!-- Sidebar user panel -->
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+    <div class="sidebar-first">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>Alexander</p>
+            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          </div>
         </div>
-        <div class="pull-left info">
-          <p>Alexander Pierce</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-        </div>
-      </div>
-      <!-- search form -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-              <span class="input-group-btn">
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
               </span>
-        </div>
-      </form>
-      <!-- /.search form -->
-      <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+          </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="expand-tree">
+          <li class="header">MAIN NAVIGATION</li>
+          <li class="expend-tree-view">
+            <a href="#">
+              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-right pull-right"></i>
+              </span>
+            </a>
+            <ul class="sidebar-menu hidden">
+              <li class="header">Dashboard</li>
+              <li><a href="../../index.html">Dashboard v1</a></li>
+              <li><a href="../../index2.html">Dashboard v2</a></li>
+            </ul>
+          </li>
+          <li class="expend-tree-view">
+            <a href="#">
+              <i class="fa fa-share"></i> <span>Multilevel</span>
+              <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
             </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-files-o"></i>
-            <span>Layout Options</span>
-            <span class="pull-right-container">
-              <span class="label label-primary pull-right">4</span>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="../widgets.html">
-            <i class="fa fa-th"></i> <span>Widgets</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
-            </span>
-          </a>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-pie-chart"></i>
-            <span>Charts</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-            <li><a href="../charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-            <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-            <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-laptop"></i>
-            <span>UI Elements</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li><a href="../UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-            <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-            <li><a href="../UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>Forms</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="../forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="../forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li><a href="../forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
-          </ul>
-        </li>
-        <li class="treeview active">
-          <a href="#">
-            <i class="fa fa-table"></i> <span>Tables</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="../calendar.html">
-            <i class="fa fa-calendar"></i> <span>Calendar</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-red">3</small>
-              <small class="label pull-right bg-blue">17</small>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="../mailbox/mailbox.html">
-            <i class="fa fa-envelope"></i> <span>Mailbox</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-yellow">12</small>
-              <small class="label pull-right bg-green">16</small>
-              <small class="label pull-right bg-red">5</small>
-            </span>
-          </a>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-folder"></i> <span>Examples</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="../examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="../examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="../examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="../examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="../examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li><a href="../examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="../examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="../examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="../examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-share"></i> <span>Multilevel</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-            <li class="treeview">
-              <a href="#"><i class="fa fa-circle-o"></i> Level One
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                <li class="treeview">
-                  <a href="#"><i class="fa fa-circle-o"></i> Level Two
-                    <span class="pull-right-container">
+            </a>
+            <ul class="sidebar-menu hidden">
+              <li class="header">Multilevel</li>
+              <li><a href="#">Level One</a></li>
+              <li class="treeview">
+                <a href="#">Level One
+                  <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="#">Level Two</a></li>
+                  <li class="treeview">
+                    <a href="#">Level Two
+                      <span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
-                  </a>
-                  <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-          </ul>
-        </li>
-        <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-        <li class="header">LABELS</li>
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
-      </ul>
-    </section>
-    <!-- /.sidebar -->
+                    </a>
+                    <ul class="treeview-menu">
+                      <li><a href="#">Level Three</a></li>
+                      <li><a href="#">Level Three</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Level One</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../widgets.html">
+              <i class="fa fa-th"></i> <span>Widgets</span>
+              <span class="pull-right-container">
+                <small class="label pull-right bg-green">new</small>
+              </span>
+            </a>
+          </li>
+          <li class="expend-tree-view">
+            <a href="#">
+              <i class="fa fa-pie-chart"></i>
+              <span>Charts</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-right pull-right"></i>
+              </span>
+            </a>
+            <ul class="sidebar-menu hidden">
+              <li class="header">Charts</li>
+              <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+              <li><a href="../charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+              <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+              <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </div>
+    <div class="sidebar-secondary">
+      <section class="sidebar">
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="header">MAIN NAVIGATION</li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+              <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-files-o"></i>
+              <span>Layout Options</span>
+              <span class="pull-right-container">
+              <span class="label label-primary pull-right">4</span>
+            </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+              <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
+              <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+              <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../widgets.html">
+              <i class="fa fa-th"></i> <span>Widgets</span>
+              <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
+            </span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-pie-chart"></i>
+              <span>Charts</span>
+              <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+              <li><a href="../charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+              <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+              <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+              <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-files-o"></i>
+              <span>Layout Options</span>
+              <span class="pull-right-container">
+              <span class="label label-primary pull-right">4</span>
+            </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+              <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
+              <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+              <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../widgets.html">
+              <i class="fa fa-th"></i> <span>Widgets</span>
+              <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
+            </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </aside>
 
-  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Simple Tables
-        <small>preview of simple tables</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Tables</a></li>
-        <li class="active">Simple</li>
-      </ol>
-    </section>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="main-content">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li><a href="#">Tables</a></li>
+          <li class="active">Simple</li>
+        </ol>
+      </section>
 
-    <!-- Main content -->
-    <section class="content">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="box">
-            <div class="box-header with-border">
-              <h3 class="box-title">Bordered Table</h3>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
-              <table class="table text-sm table-simple">
-                <tbody>
-                <tr>
-                  <td>编号:</td>
-                  <td>
-                    <div class="checkable-btn-group" data-value="0">
-                      <div class="checkable-btn">
-                        <input type="radio" name="radio1" value="1">
-                        <label>Radio</label>
-                      </div>
-                      <div class="checkable-btn">
-                        <input type="radio" name="radio1" value="2">
-                        <label>Radio</label>
-                      </div>
-                      <div class="checkable-btn">
-                        <input type="radio" name="radio1" value="3">
-                        <label>Radio</label>
+      <!-- Main content -->
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box">
+              <div class="box-header with-border">
+                <button data-toggle-target="#filter-box" data-toggle-off="展开筛选" data-toggle-on="收起筛选" data-cache="filter" type="button" class="btn btn-flat btn-xs btn-default"><i class="fa fa-filter"></i> <span>收起筛选</span></button>
+                <div class="pull-right">
+                  <button type="button" class="btn btn-flat btn-xs btn-primary"><i class="fa fa-plus"></i> 新增</button>
+                </div>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body no-padding">
+                <div class="widget-head">这是主题</div>
+                <form name="form" action="/backend/tools.Link/index" data-pjax="" method="get" id="filter-box">
+                  <input type="hidden" name="page" value="1">
+                  <div class="row filter-box">
+                    <div class="col-xs-3 col-md-1">搜索：</div>
+                    <div class="col-xs-9 col-md-5">
+                      <div class="form-group-sm form-inline">
+                        <input type="text" name="keyword" class="form-control" style="width: 300px" placeholder="搜索标题|子标题|关键字" value="">
                       </div>
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>开始时间:</td>
-                  <td>
-                    <div class="checkable-btn-group" data-value="0">
-                      <div class="checkable-btn">
-                        <input type="checkbox" name="check1" value="1">
-                        <label>选项一</label>
-                      </div>
-                      <div class="checkable-btn">
-                        <input type="checkbox" name="check1" value="2">
-                        <label>选项二</label>
-                      </div>
-                      <div class="checkable-btn">
-                        <input type="checkbox" name="check1" value="3">
-                        <label>选项三</label>
+                    <div class="col-xs-3 col-md-1">分类：</div>
+                    <div class="col-xs-9 col-md-5">
+                      <div class="checkable-btn-group" data-value="-1">
+                        <div class="checkable-btn">
+                          <input type="radio" name="type" value="-1" checked="checked">
+                          <label>不限</label>
+                        </div>
+                        <div class="checkable-btn">
+                          <input type="radio" name="type" value="1">
+                          <label>站长类</label>
+                        </div>
+                        <div class="checkable-btn">
+                          <input type="radio" name="type" value="2">
+                          <label>开发类</label>
+                        </div>
+                        <div class="checkable-btn">
+                          <input type="radio" name="type" value="3">
+                          <label>娱乐类</label>
+                        </div>
+                        <div class="checkable-btn">
+                          <input type="radio" name="type" value="4">
+                          <label>便民</label>
+                        </div>
                       </div>
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>结束时间:</td>
-                  <td>
-                    <div class="form-group-sm form-inline">
-                      <input type="text" class="form-control" style="width: 300px" id="reservationtime">
+                    <div class="col-xs-3 col-md-1">状态：</div>
+                    <div class="col-xs-9 col-md-5">
+                      <div class="checkable-btn-group" data-value="-1">
+                        <div class="checkable-btn">
+                          <input type="radio" name="is_publish" value="-1" checked="checked">
+                          <label>不限</label>
+                        </div>
+                        <div class="checkable-btn">
+                          <input type="radio" name="is_publish" value="0">
+                          <label>禁用</label>
+                        </div>
+                        <div class="checkable-btn">
+                          <input type="radio" name="is_publish" value="1">
+                          <label>启用</label>
+                        </div>
+                      </div>
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td>
-                    <button type="button" class="btn btn-sm btn-info"><i class="fa fa-search"></i> 搜索</button>
-                    <button type="button" class="btn btn-sm btn-default"><i class="fa fa-close"></i> 重置</button>
-                  </td>
-                </tr>
-                </tbody>
-              </table>
-              <a href="#" data-url="test.html" data-pjax>去测试页面</a>
-              <div id="pjax-container"></div>
-<!--              <table class="table table-bordered">-->
-<!--                <tr>-->
-<!--                  <th style="width: 10px">#</th>-->
-<!--                  <th>Task</th>-->
-<!--                  <th>Progress</th>-->
-<!--                  <th style="width: 40px">Label</th>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                  <td>1.</td>-->
-<!--                  <td>Update software</td>-->
-<!--                  <td>-->
-<!--                    <div class="progress progress-xs">-->
-<!--                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>-->
-<!--                    </div>-->
-<!--                  </td>-->
-<!--                  <td><span class="badge bg-red">55%</span></td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                  <td>2.</td>-->
-<!--                  <td>Clean database</td>-->
-<!--                  <td>-->
-<!--                    <div class="progress progress-xs">-->
-<!--                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>-->
-<!--                    </div>-->
-<!--                  </td>-->
-<!--                  <td><span class="badge bg-yellow">70%</span></td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                  <td>3.</td>-->
-<!--                  <td>Cron job running</td>-->
-<!--                  <td>-->
-<!--                    <div class="progress progress-xs progress-striped active">-->
-<!--                      <div class="progress-bar progress-bar-primary" style="width: 30%"></div>-->
-<!--                    </div>-->
-<!--                  </td>-->
-<!--                  <td><span class="badge bg-light-blue">30%</span></td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                  <td>4.</td>-->
-<!--                  <td>Fix and squish bugs</td>-->
-<!--                  <td>-->
-<!--                    <div class="progress progress-xs progress-striped active">-->
-<!--                      <div class="progress-bar progress-bar-success" style="width: 90%"></div>-->
-<!--                    </div>-->
-<!--                  </td>-->
-<!--                  <td><span class="badge bg-green">90%</span></td>-->
-<!--                </tr>-->
-<!--              </table>-->
+                    <div class="col-xs-3 col-md-1">外链：</div>
+                    <div class="col-xs-9 col-md-5">
+                      <div class="checkable-btn-group" data-value="-1">
+                        <div class="checkable-btn">
+                          <input type="radio" name="is_external" value="-1" checked="checked">
+                          <label>不限</label>
+                        </div>
+                        <div class="checkable-btn">
+                          <input type="radio" name="is_external" value="0">
+                          <label>内链</label>
+                        </div>
+                        <div class="checkable-btn">
+                          <input type="radio" name="is_external" value="1">
+                          <label>外链</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-3 col-md-1">创建时间：</div>
+                    <div class="col-xs-9 col-md-11">
+                      <div class="form-group-sm form-inline">
+                        <input type="text" class="form-control" readonly="" placeholder="请选择创建时间" style="width: 300px" name="created_at" value="" data-widget="daterangepicker" data-from="created_at_from" data-to="created_at_to">
+                        <input type="hidden" name="created_at_from">
+                        <input type="hidden" name="created_at_to">
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="text-right" style="padding: 10px">
+                    <button type="submit" class="btn btn-flat btn-xs btn-info"><i class="fa fa-search"></i> 搜索</button>&nbsp;&nbsp;&nbsp;
+                    <button type="reset" class="btn btn-flat btn-xs btn-default"><i class="fa fa-close"></i> 重置</button>
+                  </div>
+                </form>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <tbody><tr>
+                      <th style="width: 10px">#</th>
+                      <th>分类</th>
+                      <th>图标</th>
+                      <th>标题</th>
+                      <th>关键字</th>
+                      <th>排序</th>
+                      <th>状态</th>
+                      <th>统计</th>
+                      <th style="width: 150px;">操作</th>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>站长类</td>
+                      <td>
+                        <img src="/uploads/images/dwz.png" alt="/uploads/images/dwz.png" height="30">
+                      </td>
+                      <td>
+                        <a href="dwzurl" target="_blank" title="dwzurl">短网址生成</a><br>
+                        <small>Dwz Url</small>
+                      </td>
+                      <td>短网址,dwz,短网址生成,免费防红,防红接口,ae博客</td>
+                      <td>1111111</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=8" data-body="确定要禁用【短网址生成】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=8" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=8" data-body="确定要删除【短网址生成】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>娱乐类</td>
+                      <td>
+                        <img src="/uploads/images/baidu.png" alt="/uploads/images/baidu.png" height="30">
+                      </td>
+                      <td>
+                        <a href="baidu" target="_blank" title="baidu">帮你百度一下</a><br>
+                        <small>Go To Baidu</small>
+                      </td>
+                      <td>帮你百度一下</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=1" data-body="确定要禁用【帮你百度一下】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=1" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=1" data-body="确定要删除【帮你百度一下】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>开发类</td>
+                      <td>
+                        <img src="/uploads/images/code.png" alt="/uploads/images/code.png" height="30">
+                      </td>
+                      <td>
+                        <a href="code" target="_blank" title="code">字符串加解密</a><br>
+                        <small>EnCode Or DeCode</small>
+                      </td>
+                      <td>url加解密,base64加解密,md5加密,正则转义,图片base</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=2" data-body="确定要禁用【字符串加解密】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=2" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=2" data-body="确定要删除【字符串加解密】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>娱乐类</td>
+                      <td>
+                        <img src="/uploads/images/game.png" alt="/uploads/images/game.png" height="30">
+                      </td>
+                      <td>
+                        <a href="cs" target="_blank" title="cs">猜数小游戏</a><br>
+                        <small>Game</small>
+                      </td>
+                      <td>js小游戏,jsgame,智力游戏,猜数测试</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=3" data-body="确定要禁用【猜数小游戏】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=3" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=3" data-body="确定要删除【猜数小游戏】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>开发类</td>
+                      <td>
+                        <img src="/uploads/images/css.png" alt="/uploads/images/css.png" height="30">
+                      </td>
+                      <td>
+                        <a href="css_Format" target="_blank" title="css_Format">CSS代码整理</a><br>
+                        <small>CSS Format</small>
+                      </td>
+                      <td>CSS,css代码高亮,css代码格式化,css代码整理</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=4" data-body="确定要禁用【CSS代码整理】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=4" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=4" data-body="确定要删除【CSS代码整理】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>娱乐类</td>
+                      <td>
+                        <img src="/uploads/images/sz.png" alt="/uploads/images/sz.png" height="30">
+                      </td>
+                      <td>
+                        <a href="dice" target="_blank" title="dice">骰子游戏</a><br>
+                        <small>Dice</small>
+                      </td>
+                      <td>骰子游戏</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=5" data-body="确定要禁用【骰子游戏】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=5" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=5" data-body="确定要删除【骰子游戏】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>站长类</td>
+                      <td>
+                        <img src="/uploads/images/dns.png" alt="/uploads/images/dns.png" height="30">
+                      </td>
+                      <td>
+                        <a href="dns" target="_blank" title="dns">Dns解析查询</a><br>
+                        <small>Dns Query</small>
+                      </td>
+                      <td>dns解析查询,dns记录查询,ns解析查询</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=6" data-body="确定要禁用【Dns解析查询】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=6" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=6" data-body="确定要删除【Dns解析查询】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>便民</td>
+                      <td>
+                        <img src="/uploads/images/dns.png" alt="/uploads/images/dns.png" height="30">
+                      </td>
+                      <td>
+                        <a href="dnstest" target="_blank" title="dnstest">Dns检测</a><br>
+                        <small>Dns Test</small>
+                      </td>
+                      <td>在线dns检测,dns检测,dns劫持</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=7" data-body="确定要禁用【Dns检测】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=7" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=7" data-body="确定要删除【Dns检测】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>开发类</td>
+                      <td>
+                        <img src="/uploads/images/js.png" alt="/uploads/images/js.png" height="30">
+                      </td>
+                      <td>
+                        <a href="Fuck_js" target="_blank" title="Fuck_js">FuckJS转码加密</a><br>
+                        <small>Fuck JS</small>
+                      </td>
+                      <td>FuckJS转码加密</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=9" data-body="确定要禁用【FuckJS转码加密】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=9" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=9" data-body="确定要删除【FuckJS转码加密】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>开发类</td>
+                      <td>
+                        <img src="/uploads/images/hex.png" alt="/uploads/images/hex.png" height="30">
+                      </td>
+                      <td>
+                        <a href="hex" target="_blank" title="hex">在线进制转换</a><br>
+                        <small>HEX</small>
+                      </td>
+                      <td>在线进制转换</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=10" data-body="确定要禁用【在线进制转换】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=10" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=10" data-body="确定要删除【在线进制转换】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>站长类</td>
+                      <td>
+                        <img src="/uploads/images/html.png" alt="/uploads/images/html.png" height="30">
+                      </td>
+                      <td>
+                        <a href="HTML_ASCII" target="_blank" title="HTML_ASCII">文本转ASCII</a><br>
+                        <small>HTML ASCII</small>
+                      </td>
+                      <td>Html转文本转ASCII</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=11" data-body="确定要禁用【文本转ASCII】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=11" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=11" data-body="确定要删除【文本转ASCII】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>站长类</td>
+                      <td>
+                        <img src="/uploads/images/icp.png" alt="/uploads/images/icp.png" height="30">
+                      </td>
+                      <td>
+                        <a href="icp" target="_blank" title="icp">ICP备案查询</a><br>
+                        <small>ICP Query</small>
+                      </td>
+                      <td>icp备案,备案查询,域名信息查询,备案记录查询</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=12" data-body="确定要禁用【ICP备案查询】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=12" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=12" data-body="确定要删除【ICP备案查询】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>便民</td>
+                      <td>
+                        <img src="/uploads/images/ip.png" alt="/uploads/images/ip.png" height="30">
+                      </td>
+                      <td>
+                        <a href="ip" target="_blank" title="ip">IP地址查询</a><br>
+                        <small>IP Query</small>
+                      </td>
+                      <td>ip定位,ip相关,ip地址归属</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=13" data-body="确定要禁用【IP地址查询】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=13" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=13" data-body="确定要删除【IP地址查询】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>开发类</td>
+                      <td>
+                        <img src="/uploads/images/js.png" alt="/uploads/images/js.png" height="30">
+                      </td>
+                      <td>
+                        <a href="js_expression" target="_blank" title="js_expression">在线正则表达式测试</a><br>
+                        <small>Expression</small>
+                      </td>
+                      <td>js在线正则表达式测试</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=14" data-body="确定要禁用【在线正则表达式测试】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=14" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=14" data-body="确定要删除【在线正则表达式测试】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td>开发类</td>
+                      <td>
+                        <img src="/uploads/images/js.png" alt="/uploads/images/js.png" height="30">
+                      </td>
+                      <td>
+                        <a href="js_Format" target="_blank" title="js_Format">JS代码整理</a><br>
+                        <small>JS Format</small>
+                      </td>
+                      <td>Js代码加解密,js代码格式化,js压缩,js解压</td>
+                      <td>0</td>
+                      <td>
+                        <button type="button" class="btn btn-xs btn-flat btn-success" data-ajax="" data-url="/backend/tools.Link/offline?id=15" data-body="确定要禁用【JS代码整理】吗？"><i class="fa fa-play"></i> 启用</button>
+                      </td>
+                      <td>
+                        <small>查看：0</small><br>
+                        <small>收藏：0</small>
+                      </td>
+                      <td>
+                        <a class="btn btn-xs btn-flat btn-primary" href="/backend/tools.Link/view?id=15" data-pjax=""><i class="fa fa-edit"></i> 编辑</a>
+                        <button class="btn btn-xs btn-flat btn-danger" data-ajax="" data-url="/backend/tools.Link/delete?id=15" data-body="确定要删除【JS代码整理】吗？"><i class="fa fa-trash-o"></i> 删除</button>
+                      </td>
+                    </tr>
+                    </tbody></table>
+                </div>
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer clearfix">
+                共 48 条数据，当前 1/4 页<div class="form-group-sm form-inline pull-right">每页 <select class="form-control" data-widget="paginator-list-rows" name="listRows"><option value="15" selected="">15</option><option value="50">50</option><option value="100">100</option></select> 条 <ul class="pagination pagination-sm" style="vertical-align:bottom;margin:0 10px"><li class="disabled"><span>上一页</span></li> <li class="active"><span>1</span></li><li><a href="javascript:void(0)" data-widget="paginator-page" data-page="2">2</a></li><li><a href="javascript:void(0)" data-widget="paginator-page" data-page="3">3</a></li><li><a href="javascript:void(0)" data-widget="paginator-page" data-page="4">4</a></li> <li><a href="javascript:void(0)" data-widget="paginator-page" data-page="2">下一页</a></li></ul> 前往 <input data-widget="paginator-elevator" type="tel" min="1" max="4" name="page" class="form-control" style="width:50px"> 页</div>                </div>
             </div>
-            <!-- /.box-body -->
-            <div class="box-footer clearfix">
-              <ul class="pagination pagination-sm no-margin pull-right">
-                <li><a href="#">&laquo;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">&raquo;</a></li>
-              </ul>
-            </div>
+            <!-- /.box -->
           </div>
-          <!-- /.box -->
         </div>
       </div>
-    </section>
-    <!-- /.content -->
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
   </div>
-  <!-- /.content-wrapper -->
+
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.18
@@ -853,44 +1194,18 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- date-range-picker -->
-<script src="../../bower_components/moment/min/moment.min.js"></script>
-<script src="../../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
-<!-- Slimscroll -->
-<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->
-<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<script type="text/javascript" src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- Slimscroll -->
+<script type="text/javascript" src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Layer -->
+<script type="text/javascript" src="../../bower_components/layer/layer.js"></script>
 <!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
+<script type="text/javascript" src="../../dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
-<script>
-  //Date range picker
-  $('#reservation').daterangepicker()
-  //Date range picker with time picker
-  $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, locale: { format: 'MM/DD/YYYY hh:mm A' }})
-  //Date range as a button
-  $('#daterange-btn').daterangepicker(
-          {
-            ranges   : {
-              'Today'       : [moment(), moment()],
-              'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-              'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
-              'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-              'This Month'  : [moment().startOf('month'), moment().endOf('month')],
-              'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-            },
-            startDate: moment().subtract(29, 'days'),
-            endDate  : moment()
-          },
-          function (start, end) {
-            $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
-          }
-  );
-  $.toast.info('heeeloo');
-</script>
+<script type="text/javascript" src="../../dist/js/app.js"></script>
 </body>
 </html>

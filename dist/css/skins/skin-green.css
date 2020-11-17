@@ -6,7 +6,7 @@
   background-color: #00a65a;
 }
 .skin-green .main-header .navbar .nav > li > a {
-  color: #ffffff;
+  color: #fff;
 }
 .skin-green .main-header .navbar .nav > li > a:hover,
 .skin-green .main-header .navbar .nav > li > a:active,
@@ -19,7 +19,7 @@
   color: #f6f6f6;
 }
 .skin-green .main-header .navbar .sidebar-toggle {
-  color: #ffffff;
+  color: #fff;
 }
 .skin-green .main-header .navbar .sidebar-toggle:hover {
   color: #f6f6f6;
@@ -44,7 +44,7 @@
 }
 .skin-green .main-header .logo {
   background-color: #008d4c;
-  color: #ffffff;
+  color: #fff;
   border-bottom: 0 solid transparent;
 }
 .skin-green .main-header .logo:hover {
@@ -75,7 +75,7 @@
 .skin-green .sidebar-menu > li:hover > a,
 .skin-green .sidebar-menu > li.active > a,
 .skin-green .sidebar-menu > li.menu-open > a {
-  color: #ffffff;
+  color: #fff;
   background: #1e282c;
 }
 .skin-green .sidebar-menu > li.active > a {
@@ -96,7 +96,7 @@
 }
 .skin-green .sidebar-menu .treeview-menu > li.active > a,
 .skin-green .sidebar-menu .treeview-menu > li > a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .skin-green .sidebar-form {
   border-radius: 3px;

@@ -43,7 +43,11 @@ module.exports = function (grunt) { // jshint ignore:line
       development  : {
         files: {
           // compilation.css  :  source.less
-          'dist/css/AdminLTE.css'                     : 'build/less/AdminLTE.less',
+          'dist/css/AdminLTE.css'                     : [
+            'node_modules/toastr/build/toastr.min.css',
+            'node_modules/nprogress/nprogress.css',
+            'build/less/AdminLTE.less'
+          ],
           // AdminLTE without plugins
           'dist/css/alt/AdminLTE-without-plugins.css' : 'build/less/AdminLTE-without-plugins.less',
           // Separate plugins
@@ -59,7 +63,12 @@ module.exports = function (grunt) { // jshint ignore:line
         },
         files  : {
           // compilation.css  :  source.less
-          'dist/css/AdminLTE.min.css'                     : ['node_modules/toastr/build/toastr.min.css', 'build/less/AdminLTE.less'],
+          'dist/css/adminlte.min.css'                     : [
+            'node_modules/toastr/build/toastr.min.css',
+            'node_modules/nprogress/nprogress.css',
+            'node_modules/bootstrap-daterangepicker/daterangepicker.css',
+            'build/less/AdminLTE.less'
+          ],
           // AdminLTE without plugins
           'dist/css/alt/AdminLTE-without-plugins.min.css' : 'build/less/AdminLTE-without-plugins.less',
           // Separate plugins
@@ -115,13 +124,11 @@ module.exports = function (grunt) { // jshint ignore:line
         mangle : true,
         output: {
           comments: 'some'
-        },
+        }
       },
       production: {
         files: {
           'dist/js/adminlte.min.js': [
-            'node_modules/toastr/build/toastr.min.js',
-            'node_modules/jquery-pjax/jquery.pjax.js',
             'dist/js/adminlte.js'
           ]
         }
@@ -151,6 +158,12 @@ module.exports = function (grunt) { // jshint ignore:line
       },
       dist   : {
         src : [
+          'node_modules/toastr/build/toastr.min.js',
+          'node_modules/jquery-pjax/jquery.pjax.js',
+          'node_modules/nprogress/nprogress.js',
+          'bower_components/moment/moment.js',
+          'node_modules/bootstrap-validator/dist/validator.min.js',
+          'node_modules/bootstrap-daterangepicker/daterangepicker.js',
           'build/js/BoxRefresh.js',
           'build/js/BoxWidget.js',
           'build/js/ControlSidebar.js',
@@ -159,8 +172,7 @@ module.exports = function (grunt) { // jshint ignore:line
           'build/js/TodoList.js',
           'build/js/Tree.js',
           'build/js/Layout.js',
-          'build/js/Toast.js',
-          'build/js/Miscellaneous.js'
+          'build/js/ExpandTree.js'
         ],
         dest: 'dist/js/adminlte.js'
       }
@@ -211,7 +223,7 @@ module.exports = function (grunt) { // jshint ignore:line
           {
             expand: true,
             cwd   : 'build/img/',
-            src   : ['**/*.{png,jpg,gif,svg,jpeg}'],
+            src   : ['**/*.{png,jpg,gif,svg,jpeg}', 'node_modules/x-editable/dist/bootstrap3-editable/img/*.{png,jpg,gif,svg,jpeg}'],
             dest  : 'dist/img/'
           }
         ]
@@ -311,7 +323,7 @@ module.exports = function (grunt) { // jshint ignore:line
   // JS task
   grunt.registerTask('js', ['concat', 'uglify']);
   // CSS Task
-  grunt.registerTask('css', ['less:development', 'less:production', 'replace']);
+  grunt.registerTask('css', ['less:production', 'less:minifiedSkins', 'replace']);
 
   // The default task (running 'grunt' in console) is 'watch'
   grunt.registerTask('default', ['watch']);

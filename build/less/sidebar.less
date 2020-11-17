@@ -12,6 +12,12 @@
   width: @sidebar-width;
   z-index: 810;
 
+  .sidebar-first {
+    width: auto;
+  }
+  .sidebar-secondary {
+    display: none;
+  }
   // Using disposable variable to join statements with a comma
   @transition-rule: @transition-speed @transition-fn, width @transition-speed @transition-fn;
   .transition-transform(@transition-rule);
@@ -36,7 +42,6 @@
     }
   }
 }
-
 .sidebar {
   padding-bottom: 10px;
 }
@@ -137,5 +142,14 @@
   }
   .active > .treeview-menu {
     display: block;
+  }
+}
+
+.sidebar-secondary {
+  .sidebar-menu > li {
+    &.header {
+      font-size: 15px;
+      padding-top: 20px;
+    }
   }
 }

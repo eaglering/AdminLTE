@@ -17,35 +17,17 @@
     }
     .navbar-brand {
       color: #333;
-      border-right: 1px solid #eee;
     }
     .navbar {
       .navbar-variant(#fff; #333; #999; #fff);
       > .sidebar-toggle {
         color: #333;
-        border-right: 1px solid #eee;
-      }
-      .navbar-nav {
-        > li > a {
-          border-right: 1px solid #eee;
-        }
-      }
-      .navbar-custom-menu .navbar-nav,
-      .navbar-right {
-        > li {
-          > a {
-            border-left: 1px solid #eee;
-            border-right-width: 0;
-          }
-        }
       }
     }
     .logo {
-      .logo-variant(#fff; #333);
-      border-right: 1px solid #eee;
+      .logo-variant(#222; #fff);
       @media (max-width: @screen-header-collapse) {
         .logo-variant(#222; #fff);
-        border-right: none;
       }
     }
 
@@ -61,6 +43,8 @@
   }
   //Create the sidebar skin
   .skin-dark-sidebar(#fff);
+
+  .skin-light-sidebar-secondary(#fff, @gray-dark);
 
   .pace {
     .pace-progress {
